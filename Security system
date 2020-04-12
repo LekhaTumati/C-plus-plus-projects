@@ -1,0 +1,61 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num;
+    string name;
+    do
+    {
+        cout << "WELCOME TO THE KINGSMAN SECRET SERVICE COUNCIL MEETING\n";
+    }
+    while(num <= 10);
+    {
+        cout << "Enter your name\n";
+        cin >> name;
+        cout << "WELCOME AGENT " << name << endl;
+    }
+    int ID;
+    int face;
+    int thumb;
+    int retina;
+    int password;
+    cout << "ENTER YOUR ID NUMBER\n";
+    cin >> ID;
+    if(ID == 2001)
+    {
+        cout << "ID VERIFIED YOU MAY PROCEED\n";
+        cout << "ENTER FACE RECOGNITION: \n";
+        cin >> face;
+        if(face == 2002)
+        {
+            cout << "FACE SCANNER COMPLETED: YOU MAY PROCEED\n";
+            cout << "ENTER THE THUMB SCAN: \n";
+            cin >> thumb;
+            if(thumb == 2003)
+            {
+                cout << "THUMB SCAN COMPLETE: YOU MAY PROCEED\n";
+                cout << "ENTER TEH RETINA SCAN RECOGNITION: \n";
+                cin >> retina;
+                if (retina == 2004)
+                {
+                    cout << "PLEASE TYPE IN THE SECRET MEETING PASSWORD, AND YOU WILL BE ALLOWED\n";
+                    cin >> password;
+                    if(password = 2007)
+                    {
+                        cout << "WELCOME TO THE MEETING AGENT " << name;
+                    }
+                    else{cout << "YOU ARE BEING PLACED UNDER ARREST HANDS UP\n";}
+                }
+                else{cout << "PLEASE REMAIN SEATED UNTIL FURTHER NOTICE\n";}
+            }
+            else{cout << "PLEASE REMAIN SEATED UNTIL FURTHER NOTICE\n";}
+
+        }
+        else{cout << "PLEASE REMAIN SEATED UNTIL FURTHER NOTICE\n";}
+
+    }
+    else{cout << "PLEASE REMAIN SEATED UNTIL FURTHER NOTICE\n";}
+
+}
