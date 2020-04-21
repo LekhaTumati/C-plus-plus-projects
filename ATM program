@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float age;
+    int CreditCardNumber;
+    int balance;
+    int amt;
+    int pin;
+    cout << "Enter your age\n";
+    cin >> age;
+
+    if(age >= 18)
+    {
+        cout << "PLEASE GO TO THE NEXT PROCEDURE\n";
+        cout << "Enter your credit card number\n";
+        cin >> CreditCardNumber;
+        if(CreditCardNumber == 2001 || CreditCardNumber == 2002 || CreditCardNumber == 2003 || CreditCardNumber == 2004 || CreditCardNumber == 2005 )
+        {
+            cout << "Enter the Pin\n";
+            cin >> pin;
+            cout << "YOU CAN PROCEED TO THE NEXT STEP\n";
+            cout << "Enter the balance in your account\n";
+            cin >> balance;
+            if(balance > 0)
+            {
+                cout << "YOU CAN ENTER THE AMOUNT TO BE DRAWN NOW\n";
+                cin >> amt;
+                cout << "THE BALANCE LEFT IN YOUR ACCOUNT IS " << balance - amt;
+            }
+            else
+            {
+                cout << "You don't have any balance in your account\n";
+            }
+        }
+        else
+        {
+            cout << "THIS CREDIT CARD DOESN'T EXIST\n";
+        }
+    }
+
+}
