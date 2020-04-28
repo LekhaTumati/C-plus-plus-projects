@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int w, h;
+    cout << "Enter weight in kilograms\n";
+    cin >> w;
+    cout << "Enter your height in meters\n";
+    cin >> h;
+
+    float BMI = w / (h * h);
+    if(BMI <= 18.5)
+    {
+        cout << "Underweight\n";
+    }
+    else if(BMI >= 18.6 && BMI <= 24.9)
+    {
+        cout << "Healthy\n";
+    }
+    else if(BMI >= 25 && BMI <= 29.9)
+    {
+        cout << "Overweight\n";
+    }
+    else if(BMI >= 30)
+    {
+        cout << "Obese\n";
+    }
+}
