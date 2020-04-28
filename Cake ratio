@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int maida = 4, sugar = 4, milk = 3, butter = 1;
+    float bakingSoda = 0.08, vanillaExtract = 0.4;
+    if(maida = 4, sugar = 4, milk = 3, butter = 1, bakingSoda = 0.08, vanillaExtract = 0.4)
+    {
+        cout << "All these ingredients make 1 mug cake\n";
+    }
+    else if(maida = 8, sugar = 8, milk = 6, butter = 2, bakingSoda = 0.16, vanillaExtract = 0.8)
+    {
+        cout << "All these ingredients make 2 mug cakes\n";
+    }
+    else if(maida = 12, sugar = 12, milk = 9, butter = 3, bakingSoda = 0.24, vanillaExtract = 1.2)
+    {
+        cout << "All these ingredients make 3 mug cakes\n";
+    }
+    return 0;
+}
